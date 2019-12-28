@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f79050e-0a55-448e-926d-8d64aed0da36" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="2f79050e-0a55-448e-926d-8d64aed0da36" name="Default Changelist" comment="Adicionado método para validar CPF e Telefone Celular">
+      <change afterPath="$PROJECT_DIR$/src/test/java/IncluirTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/PessoaApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/PessoaApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/PessoaInputDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/PessoaInputDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/PessoaOutputDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/PessoaOutputDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mapper/PessoaMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapper/PessoaMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/PessoaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/PessoaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/api/PessoaApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/api/PessoaApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/dto/PessoaInputDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/dto/PessoaInputDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/dto/PessoaOutputDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/dto/PessoaOutputDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mapper/PessoaMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mapper/PessoaMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/Pessoa.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/Pessoa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/repository/PessoaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/repository/PessoaRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/service/PessoaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/service/PessoaService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/PessoaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/PessoaService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,10 +41,13 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1VaGs8XvdpJruOtlgBRYComVUoX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -50,7 +63,7 @@
       <recent name="C:\Users\guilh\Desktop\Nova pasta\ProjetoDoZero\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PessoaAplication">
+  <component name="RunManager" selected="Gradle.PessoaTest.deveRetornarErroAoIncluirUmNumeroComMenosDe10Digitos">
     <configuration name="PessoaApi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="api.PessoaApi" />
       <module name="ProjetoDoZero.main" />
@@ -71,8 +84,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PessoaTest.deveRetornarErroAoIncluirUmNumeroComMenosDe10Digitos" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;PessoaTest.deveRetornarErroAoIncluirUmNumeroComMenosDe10Digitos&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PessoaTest.deveRetornarUmaPessoa" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;PessoaTest.deveRetornarUmaPessoa&quot; --stacktrace" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PessoaTest.deveRetornarErroAoIncluirUmNumeroComMenosDe10Digitos" />
+        <item itemvalue="Gradle.PessoaTest.deveRetornarUmaPessoa" />
         <item itemvalue="Application.PessoaAplication" />
         <item itemvalue="Application.PessoaApi" />
       </list>
@@ -101,56 +156,95 @@
       <option name="presentableId" value="Default" />
       <updated>1577483995234</updated>
     </task>
+    <task id="LOCAL-00001" summary="Adicionado método para validar CPF e Telefone Celular">
+      <created>1577561658274</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577561658274</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adicionado método para validar CPF e Telefone Celular" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionado método para validar CPF e Telefone Celular" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1577566804091">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1577566804091" />
     <state x="765" y="195" key="#com.intellij.ide.util.MemberChooser" timestamp="1577555942403">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="195" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1577555942403" />
+    <state x="751" y="360" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1577570220979">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="751" y="360" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1577570220979" />
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577548106585">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1577548106585" />
+    <state x="545" y="28" key="CommitChangelistDialog2" timestamp="1577562348642">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="545" y="28" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1577562348642" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1577547902524">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1577547902524" />
-    <state width="1877" height="261" key="GridCell.Tab.0.bottom" timestamp="1577561592669">
+    <state width="1877" height="261" key="GridCell.Tab.0.bottom" timestamp="1577569748977">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577561592669" />
-    <state width="1877" height="261" key="GridCell.Tab.0.center" timestamp="1577561592669">
+    <state width="1877" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577569748977" />
+    <state width="1877" height="261" key="GridCell.Tab.0.center" timestamp="1577569748977">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577561592669" />
-    <state width="1877" height="261" key="GridCell.Tab.0.left" timestamp="1577561592669">
+    <state width="1877" height="261" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577569748977" />
+    <state width="1877" height="261" key="GridCell.Tab.0.left" timestamp="1577569748977">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577561592669" />
-    <state width="1877" height="261" key="GridCell.Tab.0.right" timestamp="1577561592669">
+    <state width="1877" height="261" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577569748977" />
+    <state width="1877" height="261" key="GridCell.Tab.0.right" timestamp="1577569748977">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577561592669" />
-    <state width="1877" height="326" key="GridCell.Tab.1.bottom" timestamp="1577560291288">
+    <state width="1877" height="261" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577569748977" />
+    <state width="1877" height="326" key="GridCell.Tab.1.bottom" timestamp="1577568654814">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="326" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577560291288" />
-    <state width="1877" height="326" key="GridCell.Tab.1.center" timestamp="1577560291288">
+    <state width="1877" height="326" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577568654814" />
+    <state width="1877" height="326" key="GridCell.Tab.1.center" timestamp="1577568654814">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="326" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577560291288" />
-    <state width="1877" height="326" key="GridCell.Tab.1.left" timestamp="1577560291288">
+    <state width="1877" height="326" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577568654814" />
+    <state width="1877" height="326" key="GridCell.Tab.1.left" timestamp="1577568654814">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="326" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577560291288" />
-    <state width="1877" height="326" key="GridCell.Tab.1.right" timestamp="1577560291288">
+    <state width="1877" height="326" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577568654814" />
+    <state width="1877" height="326" key="GridCell.Tab.1.right" timestamp="1577568654814">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="326" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577560291288" />
-    <state x="702" y="144" key="refactoring.ChangeSignatureDialog" timestamp="1577555037172">
+    <state width="1877" height="326" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577568654814" />
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1577561660672">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="702" y="144" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1577555037172" />
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1577561660672" />
+    <state x="702" y="144" key="refactoring.ChangeSignatureDialog" timestamp="1577568034473">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="702" y="144" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1577568034473" />
   </component>
 </project>

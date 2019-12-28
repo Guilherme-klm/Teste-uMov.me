@@ -58,7 +58,7 @@ public class PessoaService {
     public void validarTelefone (List<String> telefones) {
         for (String telefone: telefones) {
             if (telefone.length() < 10) {
-                throw new RuntimeException ("Telefone Inválido");
+                throw new RuntimeException ("Telefone Invalido");
             }
         }
     }
