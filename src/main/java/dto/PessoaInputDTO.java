@@ -5,6 +5,7 @@ import java.util.List;
 public class PessoaInputDTO {
 
     private String nome;
+    private String sobrenome;
     private String cpf;
     private Integer idade;
     private List<String> telefonesFixos;
@@ -20,6 +21,14 @@ public class PessoaInputDTO {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getSobrenome() {
+        return sobrenome;
+    }
+
+    public void setSobrenome(String sobrenome) {
+        this.sobrenome = sobrenome;
     }
 
     public Integer getIdade() {
