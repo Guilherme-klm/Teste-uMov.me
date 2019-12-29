@@ -15,7 +15,7 @@ public class IncluirTest {
     private final PessoaService pessoaService = new PessoaService();
 
     @Test
-    public void deveIncluirUmaPessoa () {
+    public void deveIncluirUmaPessoa() {
         PessoaInputDTO pessoaInputDTO = new PessoaInputDTO("04624193806");
         pessoaInputDTO.setNome("Guilherme");
         pessoaInputDTO.setSobrenome("Elias");
@@ -40,7 +40,7 @@ public class IncluirTest {
     }
 
     @Test
-    public void deveRetornarErroAoIncluirUmNumeroComMenosDe10Digitos () {
+    public void deveRetornarErroAoIncluirUmNumeroComMenosDe10Digitos() {
         PessoaInputDTO pessoaInputDTO = new PessoaInputDTO("04624193806");
 
         List<String> telCel = Arrays.asList("144472", "(91) 986076211");

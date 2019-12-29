@@ -1,39 +1,40 @@
 package api;
 
-import dto.PessoaInputDTO;
-import dto.PessoaOutputDTO;
-import mapper.PessoaMapper;
 import model.Pessoa;
 import service.PessoaService;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class PessoaApi {
 
-    private final PessoaMapper pessoaMapper = new PessoaMapper();
     private final PessoaService pessoaService = new PessoaService();
 
-    public void impressaoPessoa () {
+    public List<Pessoa> incluirDados () {
 
-        PessoaInputDTO pessoaInputDTO = new PessoaInputDTO("04624193806");
-        pessoaInputDTO.setNome("Guilherme");
-        pessoaInputDTO.setSobrenome("Elias");
-        pessoaInputDTO.setIdade(31);
+        Pessoa pessoa = new Pessoa("04624193806");
+        pessoa.setNome("Guilherme");
+        pessoa.setSobrenome("Elias");
+        pessoa.setIdade(31);
         List<String> telFixo = Arrays.asList("(61) 2863-6082", "(92) 3670-2334");
-        pessoaInputDTO.setTelefonesFixos(telFixo);
+        pessoa.setTelefonesFixos(telFixo);
         List<String> telCel = Arrays.asList("(68) 998144472", "(91) 986076211");
-        pessoaInputDTO.setTelefonesCelulares(telCel);
+        pessoa.setTelefonesCelulares(telCel);
 
-        Pessoa pessoa = pessoaMapper.mapear(pessoaInputDTO);
-        pessoa = pessoaService.incluir(pessoa);
-        PessoaOutputDTO pessoaOutputDTO = pessoaMapper.mapear(pessoa);
+        List<Pessoa> pessoasList = new ArrayList<>();
+        pessoasList.add(pessoa);
+        pessoaService.post(pessoasList);
 
-        System.out.println("Nome: " + pessoaOutputDTO.getNome() + " " + pessoaOutputDTO.getSobrenome());
-        System.out.println("Fone: " + pessoaOutputDTO.getTelefonesCelulares());
-        System.out.println("CPF: " + pessoaOutputDTO.getCpf());
+        return pessoasList;
+    }
 
-
+    public void impressaoPessoa (List<Pessoa> pessoas) {
+        for (Pessoa pessoa1 : pessoas) {
+            System.out.println("Nome: " + pessoa1.getNome() + " " + pessoa1.getSobrenome());
+            System.out.println("Fone: " + pessoa1.getTelefonesCelulares());
+            System.out.println("CPF: " + pessoa1.getCpf());
+        }
     }
 
 }
