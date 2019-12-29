@@ -41,5 +41,4 @@ public class CpfValidation {
             throw new RuntimeException ("CPF inválido");
         }
     }
-
 }

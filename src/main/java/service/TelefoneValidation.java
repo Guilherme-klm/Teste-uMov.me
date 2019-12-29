@@ -6,7 +6,7 @@ import java.util.List;
 
 public class TelefoneValidation {
 
-    public void validarTelefone(List<Pessoa> pessoas) {
+    public void validarTelefone(List<Pessoa> pessoas)  {
         int tamanhoTelefone = 10;
         for (Pessoa pessoa : pessoas) {
             for (String telefone : pessoa.getTelefonesCelulares()) {

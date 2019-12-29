@@ -13,6 +13,9 @@ public class PessoaService {
 
     public void post (List<Pessoa> pessoas) {
         telefoneValidation.validarTelefone(pessoas);
+        for (Pessoa pessoa: pessoas) {
+            cpfValidation.validarCPF(pessoa.getCpf());
+        }
         pessoaRepository.incluir(pessoas);
     }
 }
