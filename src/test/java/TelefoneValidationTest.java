@@ -1,19 +1,21 @@
 import model.Pessoa;
-import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 import org.junit.Test;
+import repository.BancoDados;
+import repository.PessoaRepository;
 import service.PessoaService;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class IncluirTest {
+public class TelefoneValidationTest {
 
     private final PessoaService pessoaService = new PessoaService();
+    private final BancoDados bancoDados = new BancoDados();
 
-    @Test
-    public void deveIncluirUmaPessoa() {
+    @Test(expected = RuntimeException.class)
+    public void deveDarUmaExcessaoAoPorMenosDe10DigitosNoNumeroDeCelular() {
 
         Pessoa pessoa = new Pessoa("61739003780");
         pessoa.setNome("João Nathan");
@@ -23,7 +25,7 @@ public class IncluirTest {
         List<String> telFix = Arrays.asList("(92) 3819-7783");
         pessoa.setTelefonesFixos(telFix);
 
-        List<String> telCel = Arrays.asList("(92) 99684-3650");
+        List<String> telCel = Arrays.asList("123");
         pessoa.setTelefonesCelulares(telCel);
 
         List<Pessoa> pessoasList = new ArrayList<>();
@@ -31,11 +33,5 @@ public class IncluirTest {
 
         pessoaService.post(pessoasList);
 
-        Assert.assertEquals("61739003780", pessoa.getCpf());
-        Assert.assertEquals("João Nathan", pessoa.getNome());
-        Assert.assertEquals("Isaac da Mata", pessoa.getSobrenome());
-        Assert.assertEquals(36, pessoa.getIdade(), 0);
-        Assert.assertThat(pessoa.getTelefonesFixos(), CoreMatchers.hasItems("(92) 3819-7783"));
-        Assert.assertThat(pessoa.getTelefonesCelulares(), CoreMatchers.hasItem("(92) 99684-3650"));
-        }
+    }
 }

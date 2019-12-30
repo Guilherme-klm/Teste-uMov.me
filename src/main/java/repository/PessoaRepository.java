@@ -7,6 +7,6 @@ import java.util.List;
 public class PessoaRepository {
 
     public void incluir (List<Pessoa> pessoas) {
-        BancoDados.incluir(pessoas);
+        BancoDados.getPessoasList().addAll(pessoas);
     }
 }

@@ -23,7 +23,7 @@ public class PessoaApi {
             List<String> telCel1 = Arrays.asList("(68) 998144472", "(91) 986076211");
             pessoa1.setTelefonesCelulares(telCel1);
 
-            Pessoa pessoa2 = new Pessoa("60566339340");
+            Pessoa pessoa2 = new Pessoa("60566339341");
             pessoa2.setNome("Fátima");
             pessoa2.setSobrenome("Andrea Almeida");
             List<String> telFixo2 = Arrays.asList("(92) 2923-6448", "(66) 3637-7469");
@@ -43,6 +43,7 @@ public class PessoaApi {
             System.out.println("Nome: " + pessoa1.getNome() + " " + pessoa1.getSobrenome());
             System.out.println("Fone: " + pessoa1.getTelefonesCelulares());
             System.out.println("CPF: " + pessoa1.getCpf());
+            System.out.println("-----------------------------");
         }
     }
 
